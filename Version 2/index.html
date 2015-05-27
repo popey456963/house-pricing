@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>House Pricing</title>
-    <meta name="description" content="" />
+    <meta name="description" content="House Pricing" />
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <!-- CSS -->
@@ -34,11 +34,12 @@
         <div class="row top"></div>
         <div class="row text-center">
             <div class="section-description">
-                <!--<p><small>This is some wonderful placeholder text</small></p>-->
-                <br><br><br>
+                <br>
+                <br>
+                <br>
                 <h2>Overview Chart</h2>
                 <canvas id="overviewChart" width="400" height="400"></canvas>
-                Which means that you have <span id="moneyLeft">x</span> for everything!
+                Which means that you have <span id="moneyLeft"><i>error</i></span> left for everything!
             </div>
         </div>
     </div>
@@ -63,22 +64,28 @@
     <script src="assets/js/chart.js"></script>
     <script src="assets/js/allCharts.js"></script>
     <script>
-    $(document).ready(function() {
-        $('pre code').each(function(i, e) {
-            hljs.highlightBlock(e)
-        });
-    });
+        $(document)
+            .ready(function() {
+                $('pre code')
+                    .each(function(i, e) {
+                        hljs.highlightBlock(e)
+                    });
+            });
 
-    $.fn.convertTag = function(text) {
-        this.text(text);
-        this.html(this.html().replace(/&lt;div\s*\/&gt;/g, '<div>'));
-        return this;
-    }
+        $.fn.convertTag = function(text) {
+            this.text(text);
+            this.html(this.html()
+                .replace(/&lt;div\s*\/&gt;/g, '<div>'));
+            return this;
+        }
 
-    $('.xml').each(function() {
-        var convert = $(this).html();
-        $(this).convertTag(convert);
-    });
+        $('.xml')
+            .each(function() {
+                var convert = $(this)
+                    .html();
+                $(this)
+                    .convertTag(convert);
+            });
     </script>
     <script src="assets/js/app.js"></script>
     <!-- .JavaScript -->

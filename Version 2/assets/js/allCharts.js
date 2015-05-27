@@ -5,7 +5,7 @@ var options =
     /*onAnimationComplete: function () {
         this.showTooltip(this.segments, true);
     },*/        
-    animation: false
+    /*animation: false*/
 }
 
 

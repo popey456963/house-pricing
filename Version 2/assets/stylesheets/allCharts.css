@@ -3,6 +3,7 @@
     color: #fff;
 }
 
+/*This is a confusing name, I mean the footer*/
 .bottom-header-div {
     background-color: #ef4e4e;
     text-align: center;
@@ -15,8 +16,14 @@
     padding-bottom: 50px;
 }
 
-a {
+a a:link a:visited a:hover a:active{
+	text-decoration: none;
     color: #fff;
+}
+
+/*For some reason the above version doesn't work*/
+a:hover{
+	color: #fff;
 }
 
 .bottom-nav-bar {
