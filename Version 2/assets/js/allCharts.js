@@ -2,9 +2,9 @@ var ctx = document.getElementById("overviewChart").getContext("2d");
 
 var options =
 {
-    /*onAnimationComplete: function () {
+    onAnimationComplete: function () {
         this.showTooltip(this.segments, true);
-    },*/        
+    },        
 }
 
 
