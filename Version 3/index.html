@@ -1,71 +1,20 @@
 <!DOCTYPE html>
-<!--[if IE 9]><html class="ie9" lang="en" > <![endif]-->
-<html class="no-js" lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>House Pricing</title>
-    <meta name="description" content="House Pricing" />
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/stylesheets/app.css" />
-    <link rel="stylesheet" href="assets/stylesheets/component.min.css" />
-    <link rel="stylesheet" href="assets/stylesheets/tomorrow.css" />
-    <link rel="stylesheet" href="assets/stylesheets/theme.css" />
-    <link rel="stylesheet" href="assets/stylesheets/allCharts.css" />
-    <!-- JavaScript -->
-    <script src="assets/js/modernizr.min.js"></script>
 </head>
 
 <body>
-    <div class="section section-collapse headroom pinned">
-        <nav class="top-bar">
-            <ul class="title-area">
-                <li class="name">
-                    <div class="name-logo"><a href="#">House Pricing</a></div>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="large-12 columns">
-        <div class="row top"></div>
-        <div class="row text-center">
-            <div class="section-description">
-                <br>
-                <br>
-                <br>
-                <h2>Overview Chart</h2>
-                <canvas id="overviewChart" width="400" height="400"></canvas>
-                Which means that you have <span id="moneyLeft"><i>error</i></span> left for everything!
-            </div>
-        </div>
-    </div>
-    <div class="bottom-header-div footer">
-        <nav>
-            | <b><a class="bottom-nav-bar" href="#">Overview</a></b> |
-            <a class="bottom-nav-bar" href="#">Deductions</a> |
-            <a class="bottom-nav-bar" href="#">Housing</a> |
-            <a class="bottom-nav-bar" href="#">Savings</a> |
-            <a class="bottom-nav-bar" href="#">Other Goods</a> |
-            <a class="bottom-nav-bar" href="#">Transport</a> |
-            <a class="bottom-nav-bar" href="#">Food</a> |
-            <a class="bottom-nav-bar" href="#">Entertainment</a> |
-            <a class="bottom-nav-bar" href="#">Restaurant</a> |
-            <a class="bottom-nav-bar" href="#">Insurance</a> |
-        </nav>
-    </div>
-    <!-- JavaScript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/foundation.min.js"></script>
-    <script src="assets/js/persist-min.js"></script>
-    <script src="assets/js/persist-script.js"></script>
-    <script src="assets/js/chart.js"></script>
-    <script src="assets/js/allCharts.js"></script>
-    <script src="assets/js/app.js"></script>
-    <!-- .JavaScript -->
+	<input type="text" id="loc" placeholder="Location"/>
+	<input type="text" id="wage" placeholder="Wage"/>
+	<input type="text" id="children" placeholder="Children"/>
+	<input type="text" id="adults" placeholder="Adults"/>
+	<input type="text" id="rooms" placeholder="Rooms"/>
+
+	<button onclick="storeData()">Store Data</button>
+
+    <script src="index_assets/js/persist-min.js"></script>
+    <script src="index_assets/js/persist-script.js"></script>
 </body>
 
 </html>

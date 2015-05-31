@@ -43,3 +43,7 @@ a:hover{
     height: 400px;
     margin: +75px 0 0 -200px;
 }
+
+.column-left{ float: left; width: 33%; }
+.column-right{ float: right; width: 33%; }
+.column-center{ display: inline-block; width: 33%; }
