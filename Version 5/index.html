@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body onload="setup()">
+    <div id="locationInput">
+	    <input type="text" id="loc" placeholder="Location" />
+
+	    <button onclick="continueLocation()">Continue</button>
+    </div>
+
+    <div id="intermediaryDiv">
+    	<p>We're currently getting necessary data!</p>
+    </div>
+
+    <div id="otherInput">
+	    <input type="text" id="wage" placeholder="Wage" />
+	    <input type="text" id="children" placeholder="Children" />
+	    <input type="text" id="adults" placeholder="Adults" />
+	    <input type="text" id="rooms" placeholder="Rooms" />
+
+	    <button onclick="continueOtherInput()">Continue</button>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
